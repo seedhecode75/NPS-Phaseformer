@@ -1,0 +1,77 @@
+{
+  "Phaseformer": {
+    "commit": "6e759dc782e514c985672c545205dea86a3d21b5",
+    "source_files": {
+      "model_with_eca.py": "356660ba157814cdca8fd5ec6c8f30cb92b24d23c2b182f441d3916cf8864848",
+      "imqual_utils.py": "fbd35d1261593866eee40f2408e6164c2361d2eb52fb0977805390db7367f156",
+      "utils.py": "20447034c2ecf5675a4c66f202c4e542698d30ccd4fd8569eac8aaa8c2a9f238",
+      "dataset.py": "bd39ef7d86e624e7cc403fb4c3a343399943ca331f4392b1cded09ec4d7f239e",
+      "train.py": "010e3ffca71dd3034336648595b1e91b646a25f2ec2271d40f31aa9db5ff4318",
+      "test.py": "a61d13dbf0b339f9db63a6a4b26a733b3c99c214341145cffd52aa40c6d07e7c",
+      "network1.py": "2750607d9761b14c383d8f3b9c9cb1d9600794b55732f1b9c754c1e8b84db4f7",
+      "data.py": "469f9fa1be241c12e03dd7eedaae076b4d0ad721c3983a49d00deccc166f1a1b"
+    }
+  },
+  "FUSION": {
+    "commit": "ccfd2fd0eb7a7e7e77aa83b6bdbb9df8cf01f5e5",
+    "source_files": {
+      "inference.py": "e501f55b40b1cdd004fa3c647d002f6025eac947404794eb299f68b837182b7e",
+      "train.py": "26ab50adb961fa1d4cdd90421e8ce3166a35870d00f82217e60c47a6ea2dd758",
+      "test.py": "bae2b2646c629f4dd4b00f7e718ce125cec64e50917db9bdfc5c4a82c9cd9fa2",
+      "utils/__init__.py": "aa6a5224281e407051c6ed4c5b7f131ddd0fc0754c2a2fe72078144fb0522787",
+      "utils/metrics.py": "216049f570b68190a53f12fa784adac9029911e7b2f7fc6a77616dc949318cbe",
+      "utils/dataset.py": "899cb6e6baa5ff1b80f5e645d9e77ae473c293a6766052919181108add0a1d36",
+      "utils/helpers.py": "5f8f354a108a881f39f69ff7eeefa5caf3076eeb0fad1c6eb69f60bde2c62a32",
+      "models/__init__.py": "1d16cbb8e518c32f8505abd52abf7ca9ec34b1e8b9432e7a3fae4f47d93e4217",
+      "models/network.py": "62c21dd96551db882f10547756c5b2bff30fc183018a38754dea19659736db1d",
+      "models/frequency.py": "cdf183a41d21fea7e56df13fd9ab4759d801b4870bd5ca2688e0ba730da1745b",
+      "models/attention.py": "88fce1b4299e6910116716e4afe680878aa561756aa8f41c0a5b687bf4c2558c",
+      "models/fusion.py": "cc5561ac469170e5969eb8859cfb6f6c028e4f145eff707f30ffed537bd8d306",
+      "data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "Spectroformer": {
+    "commit": "0a0c17b37e478bcc786cf923698f43c999587de9",
+    "source_files": {
+      "Final_model_AGSSF.py": "e265145af0f27da1ae4653cc3c430d88e61d433517f61617a9938078d564a5e2",
+      "model.py": "4600ea6dc506e88ebc97320447b0fd2c17e22c85c567d2f0f1b2d511713da103",
+      "model_without_CA.py": "e2e2eb9724f031b3dbc5511d5c2e7e42108a2070e286c349275cdc3b3882aafc",
+      "Train.py": "d82ccb2f7fe8ad76283c03ffd7895e189920abd417987b8618d3e6b675b96743",
+      "utils.py": "f1c4494f0706d0b9fe201c27ce4b9747b23f298aec13818f04ee8560f7aa73fd",
+      "uqim_utils.py": "929355c8a44c1e4dcd3ac7da188f760499a6cbfc9be3fa63736f0804021539a9",
+      "dataset.py": "c2d4469b27ff825a6e1a9283e151ed08e4fc7f3949bec3acf2d24cd58b169546",
+      "model_without_FU.py": "cfc170dd7199e2070a942dd519cc593e579c423f76d989b6d753191133f0cfbe",
+      "dataset1.py": "2b7e35e907578da704798bbbdc8c15464813a13f4da8b9d515545249ce29088e",
+      "test.py": "536824abee173283721add250a82dfca25811c7d40e256ee0b3943b02a182a0f",
+      "final_model_AGSSF1.py": "fb4b1e66160d9da7b0f32db82bd9390022cfb6f8c7583d499318e95f151ff8eb",
+      "network1.py": "2750607d9761b14c383d8f3b9c9cb1d9600794b55732f1b9c754c1e8b84db4f7",
+      "data.py": "469f9fa1be241c12e03dd7eedaae076b4d0ad721c3983a49d00deccc166f1a1b",
+      "data1.py": "09acb6c0229d18d55c9ff2271eeb5e6f96b3d094238b373e1883556cfac6a97c"
+    }
+  },
+  "UIEPTA": {
+    "commit": "a790eb8c15582720e48b77819c60386e4d5e973a",
+    "source_files": {
+      "utils.py": "731681d5ba8cfcdbcb640d278441226b06945ada6d68fb2c5197ed64f99b855e",
+      "dataset.py": "3c31790b3ee3c48004571818f1d06634ea82bffd5d6fa9b506ea03a356962945",
+      "train.py": "653202f3e9c6a41fc155ff4299e4c357ec07317e65e60ffde054cd273a5626a1",
+      "modifiedmodel1.py": "7729250249520e9123199fbfb1c2935ef4fc5461b9217bba5d703e23b6fb8a1b",
+      "network1.py": "8118c2f26186496e51a13149e2d5ccc1e8d009b06c9f5a5ec799f4f3a4a35610",
+      "data.py": "07f96801106fcf524acb611f992d5d51179f2abff1c9fbc9c9bb7623e996c0d0"
+    }
+  },
+  "FGDPA": {
+    "commit": "530c692feb99ecf6205bb929118a9167e2809d4d",
+    "source_files": {
+      "logger.py": "0d2ed8c398f858f25d69dc9c35820d3e7beb07ce9d10a99a53ecb97d84c463e7",
+      "option.py": "9676e20515df275e6aa40afc232626df5b566a53b9d6e19f82651dfd9f9faf40",
+      "loss.py": "61938fc660d2cd7d7de201252bf148c4982924d662bdd076d1e099f63c7fd7a1",
+      "main.py": "5f79e292ec094a76647149ba894efd0b568e8d01aa9b5c69bd907fb13a3e3d95",
+      "model/__init__.py": "cbdee80c8c8fc9e42fb3e18c77e888120112c3b0275463e2245b7f362bbc1711",
+      "model/uie.py": "13ae923ad93156d3dea75f6096ed812f3783d63257b755396be02c82be029ffc",
+      "model/utils.py": "7df58fd472bad73629a8de584e7990efa3c9139dbedbbce4ca04d20718f1d0d5",
+      "data/__init__.py": "d583c5922d860b956d8d738e23cabdffc818ce444cf290a3de2968f84e6dc8e1",
+      "data/uiedata.py": "c0cde36675970e02f61533e4c793112d57849702f0a5fc31d972b365137474aa"
+    }
+  }
+}

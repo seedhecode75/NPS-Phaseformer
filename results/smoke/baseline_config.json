@@ -1,0 +1,35 @@
+{
+  "config": {
+    "epochs": 1,
+    "size": 32,
+    "batch_size": 1,
+    "lr": 0.0003,
+    "betas": [
+      0.5,
+      0.999
+    ],
+    "loss": "charbonnier",
+    "tau": 0.1,
+    "clip_grad": 1.0,
+    "threads": 1
+  },
+  "model_args": {
+    "variant": "baseline",
+    "tau": 0.1,
+    "learnable": true,
+    "scale": "full"
+  },
+  "seed": 123,
+  "manifest_sha256": "0c5268f5bbc24c003acb348ce624672f7adb0042d5cfd61b54d26b522800b525",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "cuda": null,
+    "gpu": null,
+    "threads": 1
+  },
+  "initialization": null,
+  "init_sha256": null,
+  "status": "smoke_only"
+}

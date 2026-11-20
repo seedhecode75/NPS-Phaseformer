@@ -1,0 +1,1 @@
+{"epochs":200,"size":256,"batch_size":1,"lr":0.0003,"betas":[0.5,0.999],"loss":"charbonnier","tau":0.1,"clip_grad":1.0,"threads":1}

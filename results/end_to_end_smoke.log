@@ -1,0 +1,41 @@
+{"test": 2, "val": 2, "train": 4}
+{"epoch": 0, "steps": 1, "train_loss": 0.15614596009254456, "val_psnr_float_rgb": 17.080665588378906, "lr": 0.0}
+{
+  "count": 2,
+  "metrics": {
+    "psnr_rgb": 17.247922375780924,
+    "ssim_rgb": 0.068285811237079,
+    "uiqm_compat": 2.844712455854383
+  },
+  "protocol": {
+    "size": 32,
+    "head": "low",
+    "noise": 0.0,
+    "pixels": "RGB uint8 rounded, clipped; bicubic resize before inference; no crop",
+    "ssim": "skimage Gaussian sigma=1.5 population covariance",
+    "uiqm": "FUSION compatibility variant; not certified equal to paper scorer"
+  },
+  "checkpoint_sha256": "0a24616aeeba3ca2af67c668d20e997a322d93f155771e0befa910334ae53618",
+  "manifest_sha256": "d007234a29d0bc04679e97d316d5db6c5f864f919e3287e6d584cbba363621a9",
+  "model_args": {
+    "variant": "nps",
+    "tau": 0.1,
+    "learnable": true,
+    "scale": "full"
+  },
+  "load": {
+    "missing_new_parameters": [],
+    "unexpected": []
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "cuda": null,
+    "gpu": null,
+    "threads": 1
+  },
+  "checkpoint_status": "smoke_only",
+  "warning": null
+}
+END-TO-END SMOKE PASSED (synthetic data only)

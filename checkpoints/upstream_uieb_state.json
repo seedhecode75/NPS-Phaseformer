@@ -1,0 +1,6 @@
+{
+  "source_sha256": "fbb2092e299e774e9fc35a4ddb6a24a0a4ac159e9c5b754b3f1d6dff18f9dfc8",
+  "source_commit": "6e759dc782e514c985672c545205dea86a3d21b5",
+  "variant": "baseline",
+  "status": "upstream_pretrained_not_retrained"
+}

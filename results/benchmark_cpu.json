@@ -1,0 +1,92 @@
+{
+  "status": "measured_random_weight_execution_not_accuracy",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "cuda": null,
+    "gpu": null,
+    "threads": 1
+  },
+  "size": 256,
+  "batch": 1,
+  "precision": "float32",
+  "outputs": "both heads computed",
+  "warmup": 2,
+  "runs": 5,
+  "flop_convention": "2 FLOPs per multiply-accumulate; conv and attention matmul only. FFT separately estimated at 10*C*N*log2(N) per full FFT/IFFT pair. Elementwise, pooling, nonlinearities and normalization excluded. Not paper-comparable total GFLOPs.",
+  "rows": [
+    {
+      "variant": "baseline",
+      "parameters_registered": 1783800,
+      "parameters_active": 1779189,
+      "conv_matmul_gflops": 27.839300256,
+      "fft_gflops_estimate": 6.33339904,
+      "latency_ms_median": 4147.175645000061,
+      "latency_ms_min": 4042.169665000074,
+      "latency_ms_samples": [
+        4147.175645000061,
+        4045.5556439999327,
+        4042.169665000074,
+        4199.705201999905,
+        4475.297142000045
+      ],
+      "images_per_second": 0.24112795926683864,
+      "peak_cuda_allocated_bytes": null
+    },
+    {
+      "variant": "nps",
+      "parameters_registered": 1783818,
+      "parameters_active": 1779207,
+      "conv_matmul_gflops": 27.8393016,
+      "fft_gflops_estimate": 6.33339904,
+      "latency_ms_median": 4255.039882999881,
+      "latency_ms_min": 4186.59674599985,
+      "latency_ms_samples": [
+        4291.689058000202,
+        4209.144837999929,
+        4255.039882999881,
+        4186.59674599985,
+        4361.493624000104
+      ],
+      "images_per_second": 0.2350154234735355,
+      "peak_cuda_allocated_bytes": null
+    },
+    {
+      "variant": "ra_qk",
+      "parameters_registered": 1783848,
+      "parameters_active": 1779237,
+      "conv_matmul_gflops": 27.839300256,
+      "fft_gflops_estimate": 6.33339904,
+      "latency_ms_median": 2478.186978999929,
+      "latency_ms_min": 2434.7594380001283,
+      "latency_ms_samples": [
+        2458.0774470000506,
+        2478.186978999929,
+        2490.6211519999033,
+        2609.700261000171,
+        2434.7594380001283
+      ],
+      "images_per_second": 0.4035208031008013,
+      "peak_cuda_allocated_bytes": null
+    },
+    {
+      "variant": "ra_nps",
+      "parameters_registered": 1783866,
+      "parameters_active": 1779255,
+      "conv_matmul_gflops": 27.8393016,
+      "fft_gflops_estimate": 6.33339904,
+      "latency_ms_median": 2496.0921150000104,
+      "latency_ms_min": 2437.202131999811,
+      "latency_ms_samples": [
+        2537.3817889999373,
+        2743.4718419999626,
+        2496.0921150000104,
+        2437.202131999811,
+        2468.048039999985
+      ],
+      "images_per_second": 0.40062624051035706,
+      "peak_cuda_allocated_bytes": null
+    }
+  ]
+}

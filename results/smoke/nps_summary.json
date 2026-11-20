@@ -1,0 +1,38 @@
+{
+  "count": 2,
+  "metrics": {
+    "psnr_rgb": 17.247922375780924,
+    "ssim_rgb": 0.068285811237079,
+    "uiqm_compat": 2.844712455854383
+  },
+  "protocol": {
+    "size": 32,
+    "head": "low",
+    "noise": 0.0,
+    "pixels": "RGB uint8 rounded, clipped; bicubic resize before inference; no crop",
+    "ssim": "skimage Gaussian sigma=1.5 population covariance",
+    "uiqm": "FUSION compatibility variant; not certified equal to paper scorer"
+  },
+  "checkpoint_sha256": "2c459d21fe086ce956ccb6ba81a32a377537a7680cd29bb2ade51fd1849a1b25",
+  "manifest_sha256": "0c5268f5bbc24c003acb348ce624672f7adb0042d5cfd61b54d26b522800b525",
+  "model_args": {
+    "variant": "nps",
+    "tau": 0.1,
+    "learnable": true,
+    "scale": "full"
+  },
+  "load": {
+    "missing_new_parameters": [],
+    "unexpected": []
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "cuda": null,
+    "gpu": null,
+    "threads": 1
+  },
+  "checkpoint_status": "smoke_only",
+  "warning": null
+}

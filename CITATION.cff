@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Cite the original Phaseformer paper and identify this repository's modifications separately."
+title: "NPS-Phaseformer: Controlled Phase-Statistic Skip Attention Study"
+type: software
+authors:
+  - name: "Phaseformer research extension contributors"
+license: MIT
+references:
+  - type: conference-paper
+    title: "Phaseformer: Phase-Based Attention Mechanism for Underwater Image Restoration and Beyond"
+    authors:
+      - family-names: Khan
+        given-names: Raqib
+      - family-names: Negi
+        given-names: Anshul
+      - family-names: Kulkarni
+        given-names: Ashutosh
+      - family-names: Phutke
+        given-names: Shruti S.
+      - family-names: Vipparthi
+        given-names: Santosh Kumar
+      - family-names: Murala
+        given-names: Subrahmanyam
+    year: 2025
+    conference:
+      name: "Winter Conference on Applications of Computer Vision"
+    start: 9600
+    end: 9611

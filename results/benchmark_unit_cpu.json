@@ -1,0 +1,38 @@
+{
+  "status": "measured_random_weight_execution_not_accuracy",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "cuda": null,
+    "gpu": null,
+    "threads": 1
+  },
+  "size": 256,
+  "batch": 1,
+  "precision": "float32",
+  "outputs": "both heads computed",
+  "warmup": 2,
+  "runs": 5,
+  "flop_convention": "2 FLOPs per multiply-accumulate; conv and attention matmul only. FFT separately estimated at 10*C*N*log2(N) per full FFT/IFFT pair. Elementwise, pooling, nonlinearities and normalization excluded. Not paper-comparable total GFLOPs.",
+  "rows": [
+    {
+      "variant": "unit_qk",
+      "parameters_registered": 1783800,
+      "parameters_active": 1779189,
+      "conv_matmul_gflops": 27.839300256,
+      "fft_gflops_estimate": 6.33339904,
+      "latency_ms_median": 2727.0705420000922,
+      "latency_ms_min": 2680.197270000008,
+      "latency_ms_samples": [
+        2804.1886860000886,
+        2680.197270000008,
+        2736.341390000007,
+        2727.0705420000922,
+        2699.6085969999513
+      ],
+      "images_per_second": 0.36669385136864796,
+      "peak_cuda_allocated_bytes": null
+    }
+  ]
+}

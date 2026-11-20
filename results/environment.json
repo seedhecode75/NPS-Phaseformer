@@ -1,0 +1,24 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cuda_available": false,
+  "packages": {
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0",
+    "scipy": "1.17.0",
+    "scikit-image": "0.26.0",
+    "pytorch-msssim": "1.0.0",
+    "PyYAML": "6.0.3",
+    "fvcore": "0.1.5.post20221221",
+    "pytest": "9.1.1"
+  },
+  "cpu": {
+    "Architecture": "x86_64",
+    "CPU(s)": "9",
+    "Model name": "AMD EPYC 9V74 80-Core Processor",
+    "Thread(s) per core": "1",
+    "Core(s) per socket": "9"
+  }
+}

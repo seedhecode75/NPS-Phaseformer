@@ -1,0 +1,12 @@
+{
+  "status": "implemented_cpu_verified_accuracy_pending",
+  "tests_passed": 23,
+  "full_dataset_training": false,
+  "cuda_available": false,
+  "original_checkpoint_converted": true,
+  "pretrained_real_image_inference": true,
+  "synthetic_end_to_end_smoke": true,
+  "native_split_builder_smoke": true,
+  "patch_apply_check": true,
+  "proposed_underwater_trained_checkpoint": null
+}

@@ -1,0 +1,18 @@
+{
+  "status": "synthetic_mechanism_and_checkpoint_compatibility_only",
+  "dc_identity_max_error": 5.421010862427522e-19,
+  "phase_statistic_random_mean": [
+    0.7962511344564205,
+    0.26612156940515125
+  ],
+  "phase_statistic_impulse_mean": [
+    0.062469474967651005,
+    0.06198095512430671
+  ],
+  "pretrained_nps_zero_init_output_max_difference": 0.0,
+  "correction_gradient_maxima": [
+    0.005888219922780991,
+    0.0065319957211613655,
+    0.08135926723480225
+  ]
+}

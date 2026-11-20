@@ -1,0 +1,7 @@
+protocol,variant,psnr_rgb,ssim_rgb,uiqm_compat,status
+UIEB_published_original,Phaseformer,25.98,0.928,4.451,published_not_reproduced_and_UIQM_definition_unverified
+UFO120_published_original,Phaseformer,30.38,0.878,2.907,published_not_reproduced_and_UIQM_definition_unverified
+UIEB_720_80_90_new,baseline,,,,not_trained
+UIEB_720_80_90_new,nps,,,,not_trained
+UIEB_720_80_90_new,ra_qk,,,,not_trained
+UIEB_720_80_90_new,ra_nps,,,,not_trained

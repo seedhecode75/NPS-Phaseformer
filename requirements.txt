@@ -1,0 +1,7 @@
+# Install the CPU/CUDA torch + torchvision pair from README first.
+numpy==2.3.5
+Pillow==12.3.0
+scipy==1.17.0
+scikit-image==0.26.0
+pytorch-msssim==1.0.0
+pytest==9.1.1
