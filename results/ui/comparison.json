@@ -1,0 +1,32 @@
+{
+  "metrics": {
+    "psnr_rgb": {
+      "baseline": 24.23714047898827,
+      "proposed": 24.316190241686552,
+      "paired_delta": 0.0790497626982885,
+      "image_bootstrap_95ci": [
+        -0.2825158673242768,
+        0.4400456565939489
+      ]
+    },
+    "ssim_rgb": {
+      "baseline": 0.9041485706754202,
+      "proposed": 0.9085867874139859,
+      "paired_delta": 0.0044382167385655,
+      "image_bootstrap_95ci": [
+        0.00045476212653583947,
+        0.008879856826550353
+      ]
+    },
+    "uiqm_compat": {
+      "baseline": 3.1932728027696604,
+      "proposed": 3.1658669561224455,
+      "paired_delta": -0.027405846647214824,
+      "image_bootstrap_95ci": [
+        -0.04877424709426332,
+        -0.006383419262414437
+      ]
+    }
+  },
+  "warning": "Image bootstrap is conditional on these trained models; it is not training-seed uncertainty."
+}

@@ -10,10 +10,8 @@
 
 NPS improved SSIM and reduced compatibility UIQM. Mean PSNR was slightly higher, but its paired interval includes zero. Intervals resample test images for this trained pair and do not measure variability across training seeds.
 
-Source: aggregate output supplied from the team's Kaggle comparison. [Download as CSV](uieb_comparison.csv). Checkpoints, logs, and raw per-image files have not yet been published. The original authors’ [pretrained UIEB checkpoint](https://github.com/Mdraqibkhan/Phaseformer/blob/6e759dc782e514c985672c545205dea86a3d21b5/checkpoints/UIEB/best.pth) is available separately.
+## Run records and reproduction
 
-**Protocol:** 720 training / 80 validation / 90 test images, split seed 2025, model seed 123. Both architectures start from scratch. Select by validation RGB PSNR within the same completed training horizon. Record the actual completed and selected epochs from the logs alongside the [scheduler configuration](../configs/controlled.json).
+[Full metric and latency table](ui/report_table.csv) · [Paired bootstrap output](ui/comparison.json) · [T4 timings and FLOP convention](ui/benchmark.json)
 
-**Release contents:** selected weights and SHA-256 for each model, per-run config and training log, split manifest, environment, both test summaries and per-image CSVs, paired comparison, GPU benchmark and example panel. Checkpoint hashes must match the evaluation summaries. Report PSNR, SSIM, compatibility UIQM and image-bootstrap intervals; label the separate FLOP estimates and the GPU used for latency.
-
-Use the commands in [Inference and evaluation](../README.md#5-inference-and-evaluation) to regenerate the tables from the released weights. Software smoke tests under this directory are separate from the held-out experiment.
+Both models completed 30 epochs (21,600 updates each) on a 200-epoch cosine schedule; validation PSNR peaked at epoch 27 for [baseline](ui/baseline/train.jsonl) and 26 for [NPS](ui/nps/train.jsonl). [Baseline settings](ui/baseline/config.json) and [NPS settings](ui/nps/config.json) record Python 3.13.16, PyTorch 2.11.0+cu130, CUDA 13.0 and Tesla T4. The split comprises 720 training, 80 validation and 90 test pairs. The export contains aggregate scores but not the original per-image CSVs or test summaries. Selected checkpoint hashes are available [here](ui/checkpoint_sha256.json).

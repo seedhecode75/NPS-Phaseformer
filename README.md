@@ -14,6 +14,8 @@ The UIEB experiment runs one model per NVIDIA Tesla T4. The same paired split, i
 
 NPS improved SSIM and reduced compatibility UIQM. Mean PSNR was slightly higher, but its paired interval includes zero. Intervals resample test images for this trained pair and do not measure variability across training seeds.
 
+**Final run:** Both models completed 30 epochs. Validation selected baseline epoch 27 and NPS epoch 26. On a Tesla T4 the median latency increased from 105.18 to 108.45 ms (+3.1%) for 18 additional parameters. [Raw training logs, performance table and split](results/ui/) · [Checkpoint instructions](results/UIEB.md).
+
 ## 1. Project overview and precise contribution
 
 The released skip attention computes `GAP(IFFT(exp(i*phase)))`. Under the default FFT normalization this is only the DC phasor divided by the pixel count. Non-DC phase structure is lost. Simply adding amplitude reliability weights does not repair that pooling limitation.
@@ -206,8 +208,8 @@ Measures both output heads, registered/executed parameters, synchronized latency
 | Official UIEB state dictionary | [Download and conversion script](scripts/fetch_upstream.py) | Rebuild locally from the checksum-verified original |
 | Official source checkpoint | [pinned upstream UIEB weights](https://github.com/Mdraqibkhan/Phaseformer/blob/6e759dc782e514c985672c545205dea86a3d21b5/checkpoints/UIEB/best.pth) | Public source and SHA recorded |
 | Conversion provenance | [checkpoints/upstream_uieb_state.json](checkpoints/upstream_uieb_state.json) | Input SHA-256 and source commit |
-| Proposed underwater weights | [Artifact index](results/UIEB.md) | Pending upload from the training run |
-| Trained baseline/proposed results | Generated under `runs/` by commands above | [Reported comparison](results/UIEB.md); per-image files pending |
+| Proposed underwater weights | [Artifact index](results/UIEB.md) | Checkpoint publication pending |
+| Trained baseline/proposed results | Generated under `runs/` by commands above | [Reported comparison](results/UIEB.md); per-image CSVs can be regenerated |
 | Test log | [results/tests.xml](results/tests.xml) | Executed unit/numerical checks |
 | Mechanism evidence | [results/mechanism_probe.json](results/mechanism_probe.json) | Executed synthetic diagnostics |
 | CPU profile | [results/benchmark_cpu.json](results/benchmark_cpu.json) | Executed timing/parameter counts |

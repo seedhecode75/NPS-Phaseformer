@@ -1,0 +1,35 @@
+{
+  "config": {
+    "epochs": 200,
+    "size": 256,
+    "batch_size": 1,
+    "lr": 0.0003,
+    "betas": [
+      0.5,
+      0.999
+    ],
+    "loss": "charbonnier",
+    "tau": 0.1,
+    "clip_grad": 1.0,
+    "threads": 1
+  },
+  "model_args": {
+    "variant": "baseline",
+    "tau": 0.1,
+    "learnable": true,
+    "scale": "full"
+  },
+  "seed": 123,
+  "manifest_sha256": "31c80b343c76e41c6fe945ae18382885888e8e26028e9d2fe0bbf215097647b0",
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+    "cuda": "13.0",
+    "gpu": "Tesla T4",
+    "threads": 1
+  },
+  "initialization": null,
+  "init_sha256": null,
+  "status": "controlled_training_not_paper_reproduction"
+}
