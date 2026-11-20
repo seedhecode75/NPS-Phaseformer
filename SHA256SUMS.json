@@ -40,7 +40,7 @@
   "requirements-tested.txt": "c94d57b440a3abc4a9aa99a9f25b19fb5f88824677b30e4d7d994ea3084ee5f4",
   "requirements.txt": "bca95301c5e5b1bb3c80a63ade85bd257330f93ee54b55f0bf5361481f06098b",
   "results/MEASURED_RESULTS.md": "64bea2a5b0686dd6a129a196f4f21d76b6b6844aa279d36f88681f6ddec26815",
-  "results/UIEB.md": "fb7730208071d2b901d43b65f6969ef05f9b32a594490358296e1853d5fd909d",
+  "results/UIEB.md": "1beda654cfae547994513128a5aa1d6467cf588d5219b7870446a785e78e3918",
   "results/benchmark_cpu.json": "d5fcdc30c010e37393991e808c8ea96c35d9d05af28d82b918789868927223a3",
   "results/benchmark_unit_cpu.json": "ef4c05a46cc4f3ed3c6e667ca65b95220c131c0814c76dcf3b657f990ab06157",
   "results/end_to_end_smoke.log": "51768ad783eff6b2ff3de466f2255e0a8017c279cd7b792f1611b724a65f91f8",
@@ -83,5 +83,7 @@
   "results/ui/nps/config.json": "1898cffbcd4256f1011e25e6ebf00d16230fa618d4fd050e02059ef8cba57ef9",
   "results/ui/baseline/train.jsonl": "a6a11105519e2eae21218455e6492dd25ee7a372f1d9cb6bb935a4827e392ba3",
   "results/ui/nps/train.jsonl": "cdeaad2a112761e08f65163c79ebce076336f4e53dffcc1a82bdb4a90d484bc1",
-  "results/ui/checkpoint_sha256.json": "d81cdf5d353c621431ecd13a0a3d6ed053f7adce6f935b89d78cbc5434ed4ce1"
+  "results/ui/checkpoint_sha256.json": "d81cdf5d353c621431ecd13a0a3d6ed053f7adce6f935b89d78cbc5434ed4ce1",
+  "results/ui/uieb.json": "31c80b343c76e41c6fe945ae18382885888e8e26028e9d2fe0bbf215097647b0",
+  "results/ui/learning_curves.png": "90978cb22a6c4e50a358062894a971d19b7dc72b6ec02939e7d9ea9b2bc52cbc"
 }
