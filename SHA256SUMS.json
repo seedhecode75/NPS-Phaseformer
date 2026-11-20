@@ -2,7 +2,7 @@
   ".gitignore": "bb8793a7ab09f330a9c410ad06490d677acc27a2b92416e48f0b99db565c0f16",
   "CITATION.cff": "77f1bf47f77cd8de52ea1e8e2f7df37701a225bb9fa875c4cf78cf99d2571bb6",
   "LICENSE": "6c82082b8ec16cafd8a15e83e498bafc4cbf6d5e8a5b4dcc9af512c1add39ad2",
-  "README.md": "bda5cbfc5d6589b0c139b0cf8ddcc7c0b492c14eeaaea9d818403a91a9b47a9d",
+  "README.md": "a5951c7bc8d8e2647aa5904aa47a9d605290436a754cdca317f7f45a012629a8",
   "benchmark.py": "cc39f2a89f4061364c7e2aafbe2dc89a9dd5a9135f59b97632945622e4246e11",
   "checkpoints/README.md": "722b1858e057b104f6dfdab63e431f5f1b0d1f4b3469f3b3943f7b75e9fbe43c",
   "checkpoints/upstream_uieb_state.json": "bb3a88882eba8e6744f8791a3cde4cfcc3c29ec65d5d2506483878ad4e34028a",
@@ -40,7 +40,7 @@
   "requirements-tested.txt": "c94d57b440a3abc4a9aa99a9f25b19fb5f88824677b30e4d7d994ea3084ee5f4",
   "requirements.txt": "bca95301c5e5b1bb3c80a63ade85bd257330f93ee54b55f0bf5361481f06098b",
   "results/MEASURED_RESULTS.md": "64bea2a5b0686dd6a129a196f4f21d76b6b6844aa279d36f88681f6ddec26815",
-  "results/UIEB.md": "b27ba747fdcc73ad795682e43dba328f3c8599515afd42efa802d601da37f23d",
+  "results/UIEB.md": "61952d682a95a118c2f8f3f009e485acf7842cd7bc97c0d4eae72022c2a7078b",
   "results/benchmark_cpu.json": "d5fcdc30c010e37393991e808c8ea96c35d9d05af28d82b918789868927223a3",
   "results/benchmark_unit_cpu.json": "ef4c05a46cc4f3ed3c6e667ca65b95220c131c0814c76dcf3b657f990ab06157",
   "results/end_to_end_smoke.log": "51768ad783eff6b2ff3de466f2255e0a8017c279cd7b792f1611b724a65f91f8",
@@ -73,5 +73,6 @@
   "scripts/run_ablation.py": "b5d5c157a47d5c4cf1468325cc25d0359983ea33030634b58acddd1c80254b01",
   "scripts/smoke.py": "2eebc3c1a5bcbebf87e81cffd5e734ea76323600860483f23fee8eb323a20c6f",
   "tests/test_research.py": "109866edbb95a79bc75c42adc4295c1254fe5edc0c49815e3a9900cc9c895089",
-  "train.py": "6fc0b39685a58e47be5e6f0998315c7a3000aa86a18d9670c745817b52271d28"
+  "train.py": "6fc0b39685a58e47be5e6f0998315c7a3000aa86a18d9670c745817b52271d28",
+  "results/uieb_comparison.csv": "0169ebca7a261bced566e98960a7c8cf45fd3312bdd3b41780bc28d7724a72cf"
 }

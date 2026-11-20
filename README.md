@@ -4,7 +4,15 @@ A complete research extension of **Phaseformer: Phase-Based Attention Mechanism 
 
 **Start here:** [Kaggle training notebook](notebooks/Phaseformer_Kaggle.ipynb) · [Architecture and derivation](docs/RESEARCH_REPORT.md) · [Module map](docs/CODE_MAP.md) · [Experiment artifacts](results/UIEB.md).
 
-The UIEB experiment runs one model per NVIDIA Tesla T4. The same paired split, initialization seed and training recipe apply to both models. Held-out scores and team-trained checkpoints will be added together after evaluation.
+The UIEB experiment runs one model per NVIDIA Tesla T4. The same paired split, initialization seed and training recipe apply to both models. The team’s Kaggle evaluation on the 90-image UIEB test split is summarized below.
+
+| Metric | Phaseformer | NPS-Phaseformer | NPS − baseline | Paired 95% CI |
+|---|---:|---:|---:|---|
+| psnr_rgb | 24.23714 | 24.31619 | +0.07905 | [-0.282516, 0.440046] |
+| ssim_rgb | 0.904149 | 0.908587 | +0.004438 | [0.000455, 0.008880] |
+| uiqm_compat | 3.193273 | 3.165867 | -0.027406 | [-0.048774, -0.006383] |
+
+NPS improved SSIM and reduced compatibility UIQM. Mean PSNR was slightly higher, but its paired interval includes zero. Intervals resample test images for this trained pair and do not measure variability across training seeds.
 
 ## 1. Project overview and precise contribution
 
@@ -199,7 +207,7 @@ Measures both output heads, registered/executed parameters, synchronized latency
 | Official source checkpoint | [pinned upstream UIEB weights](https://github.com/Mdraqibkhan/Phaseformer/blob/6e759dc782e514c985672c545205dea86a3d21b5/checkpoints/UIEB/best.pth) | Public source and SHA recorded |
 | Conversion provenance | [checkpoints/upstream_uieb_state.json](checkpoints/upstream_uieb_state.json) | Input SHA-256 and source commit |
 | Proposed underwater weights | [Artifact index](results/UIEB.md) | Pending upload from the training run |
-| Trained baseline/proposed results | Generated under `runs/` by commands above | Awaiting held-out evaluation artifacts |
+| Trained baseline/proposed results | Generated under `runs/` by commands above | [Reported comparison](results/UIEB.md); per-image files pending |
 | Test log | [results/tests.xml](results/tests.xml) | Executed unit/numerical checks |
 | Mechanism evidence | [results/mechanism_probe.json](results/mechanism_probe.json) | Executed synthetic diagnostics |
 | CPU profile | [results/benchmark_cpu.json](results/benchmark_cpu.json) | Executed timing/parameter counts |
